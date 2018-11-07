@@ -153,6 +153,21 @@
 
 					heroku pg:backups:restore 'https://your-app-name.herokuapp.com/37ffb307-0424-4339-b3ab-9312fea0677d' DATABASE_URL -a your-app-name
 				</section>
+				<section data-background-image="img/background.png">
+					<h2>Configure Scheduled Backups</h2>
+
+					heroku pg:backups:schedule DATABASE_URL --at '03:00 Europe/Warsaw' --app your-app-name
+				</section>
+				<section data-background-image="img/background.png">
+					<h2>List Scheduled Backups</h2>
+
+					heroku pg:backups:schedules --app your-app-name
+				</section>
+				<section data-background-image="img/background.png">
+					<h2>Question</h2>
+
+					Is it secure?
+				</section>
 			</div>
 		</div>
 
